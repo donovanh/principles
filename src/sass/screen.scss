@@ -292,7 +292,7 @@ h2 {
 
 .sevena {
   .shape-container {
-    animation: move-right 6s infinite linear;
+    animation: move-right 6s infinite cubic-bezier(.37,.55,.49,.67);
     position: absolute;
     left: calc(50% - 4em);
     top: calc(50% - 4em);
@@ -308,14 +308,14 @@ h2 {
 
 @keyframes move-right {
   0% {
-    transform: translateX(-18em);
+    transform: translateX(-20em);
     opacity: 1;
   }
   80% {
     opacity: 1;
   }
   90%, 100% {
-    transform: translateX(18em);
+    transform: translateX(20em);
     opacity: 0;
   }
 }
@@ -361,8 +361,8 @@ h2 {
     transform: translateY(8em);
     animation-timing-function: cubic-bezier(.19,1,.7,1);
   }
-  68% {
-    transform: translateY(7em);
+  66% {
+    transform: translateY(7.5em);
     animation-timing-function: cubic-bezier(.51,.01,.79,.02);
   }
   70%, 100% {
