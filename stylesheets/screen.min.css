@@ -757,7 +757,6 @@ h2 {
 .sevenb .shape.a {
   -webkit-animation: sevenb 3s infinite linear;
           animation: sevenb 3s infinite linear;
-  background-color: green;
   top: -webkit-calc(50% - 2em);
   top: calc(50% - 2em);
   left: -webkit-calc(50% - 9em);
@@ -769,7 +768,7 @@ h2 {
 .sevenb .shape.b {
   -webkit-animation: sevenb 6s infinite linear reverse;
           animation: sevenb 6s infinite linear reverse;
-  background-color: red;
+  background-color: yellow;
   width: 2em;
   height: 2em;
   left: -webkit-calc(50% - 1em);

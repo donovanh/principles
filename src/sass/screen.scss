@@ -377,14 +377,13 @@ h2 {
 .sevenb .shape {
   &.a {
     animation: sevenb 3s infinite linear;
-    background-color: green;
     top: calc(50% - 2em);
     left: calc(50% - 9em);
     transform-origin: 10em 50%;
   }
   &.b {
     animation: sevenb 6s infinite linear reverse;
-    background-color: red;
+    background-color: yellow;
     width: 2em;
     height: 2em;
     left: calc(50% - 1em);
