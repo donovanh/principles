@@ -74,7 +74,7 @@ h2 {
 /******* TWO (Anticipation) *******/
 
 .two .shape {
-  animation: two 6s infinite ease-out;
+  animation: two 5s infinite ease-out;
   transform-origin: 50% 7em;
 }
 
@@ -132,12 +132,12 @@ h2 {
 }
 
 .three .shape.b {
-  animation: three 6s infinite ease-out;
+  animation: three 5s infinite ease-out;
   transform-origin: 0 6em;
 }
 
 .three .shape.a, .three .shape.c {
-  animation: threeb 6s infinite linear;
+  animation: threeb 5s infinite linear;
 }
 
 @keyframes three {
@@ -223,14 +223,14 @@ h2 {
 /******* FIVE (Follow through) *******/
 
 .five .shape {
-  animation: five 4s infinite cubic-bezier(.47,-0.27,.29,1.15);
+  animation: five 4s infinite cubic-bezier(.64,-0.36,.1,1);
   position: relative;
   left: auto;
   top: auto;
 }
 
 .five .shape-container {
-  animation: five-container 4s infinite cubic-bezier(.39,-0.2,.28,1.33);
+  animation: five-container 4s infinite cubic-bezier(.64,-0.36,.1,2);
   position: absolute;
   left: calc(50% - 4em);
   top: calc(50% - 4em);
@@ -256,16 +256,13 @@ h2 {
 }
 
 @keyframes five-container {
-  0%, 25% {
+  0%, 35% {
     transform: none;
   }
-  40%, 55% {
+  50%, 60% {
     transform: skewX(20deg);
   }
-  70%, 75% {
-    transform: skewX(-10deg);
-  }
-  80%, 100% {
+  90%, 100% {
     transform: none;
   }
 }

@@ -124,8 +124,8 @@ h2 {
 }
 /******* TWO (Anticipation) *******/
 .two .shape {
-  -webkit-animation: two 6s infinite ease-out;
-          animation: two 6s infinite ease-out;
+  -webkit-animation: two 5s infinite ease-out;
+          animation: two 5s infinite ease-out;
   -webkit-transform-origin: 50% 7em;
       -ms-transform-origin: 50% 7em;
           transform-origin: 50% 7em;
@@ -236,16 +236,16 @@ h2 {
 }
 
 .three .shape.b {
-  -webkit-animation: three 6s infinite ease-out;
-          animation: three 6s infinite ease-out;
+  -webkit-animation: three 5s infinite ease-out;
+          animation: three 5s infinite ease-out;
   -webkit-transform-origin: 0 6em;
       -ms-transform-origin: 0 6em;
           transform-origin: 0 6em;
 }
 
 .three .shape.a, .three .shape.c {
-  -webkit-animation: threeb 6s infinite linear;
-          animation: threeb 6s infinite linear;
+  -webkit-animation: threeb 5s infinite linear;
+          animation: threeb 5s infinite linear;
 }
 
 @-webkit-keyframes three {
@@ -430,16 +430,16 @@ h2 {
 }
 /******* FIVE (Follow through) *******/
 .five .shape {
-  -webkit-animation: five 4s infinite cubic-bezier(0.47, -0.27, 0.29, 1.15);
-          animation: five 4s infinite cubic-bezier(0.47, -0.27, 0.29, 1.15);
+  -webkit-animation: five 4s infinite cubic-bezier(0.64, -0.36, 0.1, 1);
+          animation: five 4s infinite cubic-bezier(0.64, -0.36, 0.1, 1);
   position: relative;
   left: auto;
   top: auto;
 }
 
 .five .shape-container {
-  -webkit-animation: five-container 4s infinite cubic-bezier(0.39, -0.2, 0.28, 1.33);
-          animation: five-container 4s infinite cubic-bezier(0.39, -0.2, 0.28, 1.33);
+  -webkit-animation: five-container 4s infinite cubic-bezier(0.64, -0.36, 0.1, 2);
+          animation: five-container 4s infinite cubic-bezier(0.64, -0.36, 0.1, 2);
   position: absolute;
   left: -webkit-calc(50% - 4em);
   left: calc(50% - 4em);
@@ -493,37 +493,29 @@ h2 {
   }
 }
 @-webkit-keyframes five-container {
-  0%, 25% {
+  0%, 35% {
     -webkit-transform: none;
             transform: none;
   }
-  40%, 55% {
+  50%, 60% {
     -webkit-transform: skewX(20deg);
             transform: skewX(20deg);
   }
-  70%, 75% {
-    -webkit-transform: skewX(-10deg);
-            transform: skewX(-10deg);
-  }
-  80%, 100% {
+  90%, 100% {
     -webkit-transform: none;
             transform: none;
   }
 }
 @keyframes five-container {
-  0%, 25% {
+  0%, 35% {
     -webkit-transform: none;
             transform: none;
   }
-  40%, 55% {
+  50%, 60% {
     -webkit-transform: skewX(20deg);
             transform: skewX(20deg);
   }
-  70%, 75% {
-    -webkit-transform: skewX(-10deg);
-            transform: skewX(-10deg);
-  }
-  80%, 100% {
+  90%, 100% {
     -webkit-transform: none;
             transform: none;
   }
